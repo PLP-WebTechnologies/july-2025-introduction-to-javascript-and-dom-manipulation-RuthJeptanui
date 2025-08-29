@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="A comprehensive guide to mastering JavaScript, covering basics to advanced topics.">
+</head>
+<body>
+    <!-- header -->
+     <section>
+        <h1>Explore course for your child</h1>
+        <p>Find the best courses to enhance your child's learning experience.</p>
+     </section>
+    <!-- main -->
+     <main>
+        <section>
+            <!-- select grade -->
+            <legend>Select the grade your child is in:</legend>
+            <label for="grade"> Select Grade</label>
+            <select name="grade" id="grade">
+                <option value="1">Grade 1</option>
+                <option value="2">Grade 2</option>
+                <option value="3">Grade 3</option>
+                <option value="4">Grade 4</option>
+                <option value="5">Grade 5</option>
+                <option value="6">Grade 6</option>
+                <option value="7">Grade 7</option>
+                <option value="8">Grade 8</option>
+                <option value="9">Grade 9</option>
+                <option value="10">Grade 10</option>
+                <option value="11">Grade 11</option>
+                <option value="12">Grade 12</option>
+            </select> 
+
+            <!--  dynamically show information of the selected grade, and its info  -->
+            <label for="selectedGradeInfo"></label>
+            <textarea name="selectedGradeInfo" id="selectedGradeInfo"></textarea>
+            
+
+        </section>
+        <section>
+            <legend>Explore subject and Interests</legend>
+            <button id="toggleButton" onclick="toggleSubjects()">Subjects</button>
+            <div id="subjectList" style="display:none;">
+                <input type="checkbox" id="math" name="subject" value="Math">
+                <label for="math"> Math</label><br>
+                <input type="checkbox" id="science" name="subject" value="Science">
+                <label for="science"> Science</label><br>
+                <input type="checkbox" id="history" name="subject" value="History">
+                <label for="history"> History</label><br>
+                <input type="checkbox" id="art" name="subject" value="Art">
+                <label for="art"> Art</label><br>
+                <input type="checkbox" id="music" name="subject" value="Music">
+                <label for="music"> Music</label><br>
+                <input type="checkbox" id="literature" name="subject" value="Literature">
+                <label for="literature"> Literature</label><br>
+            </div>
+        </section>
+     </main>
+
+     <footer>
+        <button id="countBtn">Click here Reset the timer </button>
+        <p id="countDisplay"></p>
+     </footer>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
